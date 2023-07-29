@@ -48,7 +48,6 @@
         android:layout_marginTop="21dp"
         android:layout_marginEnd="155dp"
         android:fontFamily="monospace"
-        android:text="TextView"
         android:textColor="?android:attr/colorMultiSelectHighlight"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -56,5 +55,73 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_ola" />
+
+    <EditText
+        android:id="@+id/EDT_calc2"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="115dp"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:hint="Digite um n°"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EDT_calc1"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="115dp"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:hint="Digite um n°"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="9dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="130dp"
+        android:gravity="center"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toStartOf="@+id/EDT_calc2"
+        app:layout_constraintStart_toEndOf="@+id/EDT_calc1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/BTN_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="50dp"
+        android:password="false"
+        android:text="Calcular"
+        android:textColorHighlight="#F44336"
+        android:textColorLink="#F44336"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDT_calc2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
